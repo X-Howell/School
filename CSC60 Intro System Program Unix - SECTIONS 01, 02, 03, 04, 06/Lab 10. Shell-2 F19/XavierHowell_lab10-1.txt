@@ -1,0 +1,94 @@
+Script started on Sat 14 Dec 2019 01:55:30 PM PST
+]0;howellx@sp2:lab10[howellx@sp2 lab10]$ gcc lab10.c _[K-Wall
+]0;howellx@sp2:lab10[howellx@sp2 lab10]$ ./a.out
+csc60msh> ls>lsout
+Argc=1 
+Argv 0 = ls>lsout 
+Error on the exec call
+Child returned status: 256
+csc60msh> cat lsout
+Argc=2 
+Argv 0 = cat 
+Argv 1 = lsout 
+cat: lsout: No such file or directory
+Child returned status: 256
+csc60msh> ls>lsout>file1
+Argc=1 
+Argv 0 = ls>lsout>file1 
+Error on the exec call
+Child returned status: 256
+csc60msh> cat foot .txt
+Argc=2 
+Argv 0 = cat 
+Argv 1 = foo.txt 
+cat: foo.txt: No such file or directory
+Child returned status: 256
+csc60msh> />l   >lsout
+Argc=1 
+Argv 0 = >lsout 
+Error on the exec call
+Child returned status: 256
+csc60msh> <lsout
+Argc=1 
+Argv 0 = <lsout 
+Error on the exec call
+Child returned status: 256
+csc60msh> wc<lsout
+Argc=1 
+Argv 0 = wc<lsout 
+Error on the exec call
+Child returned status: 256
+csc60msh> wc<lsout>wcount
+Argc=1 
+Argv 0 = wc<lsout>wcount 
+Error on the exec call
+Child returned status: 256
+csc60msh> cat wcount
+Argc=2 
+Argv 0 = cat 
+Argv 1 = wcount 
+cat: wcount: No such file or directory
+Child returned status: 256
+csc60msh> wc < lsout < wcout
+Argc=5 
+Argv 0 = wc 
+Argv 1 = < 
+Argv 2 = lsout 
+Argv 3 = < 
+Argv 4 = wcout 
+Cannot input from more than one file.
+Child returned status: 256
+csc60msh> cd ../lab1
+Argc=2 
+Argv 0 = cd 
+Argv 1 = ../lab1 
+csc60msh> gcc lab1.c
+Argc=2 
+Argv 0 = gcc 
+Argv 1 = lab1.c 
+Child returned status: 0
+csc60msh> a.out
+Argc=1 
+Argv 0 = a.out 
+Error on the exec call
+Child returned status: 256
+csc60msh> ./a.out
+Argc=1 
+Argv 0 = ./a.out 
+
+Lab1. 
+
+Hello World.
+Hi, Xavier Howell.
+
+Get Buckets.
+-Every NBA Player
+
+Child returned status: 0
+csc60msh> exit
+Argc=1 
+Argv 0 = exit 
+]0;howellx@sp2:lab10[howellx@sp2 lab10]$ exit
+exit
+
+Script done on Sat 14 Dec 2019 01:59:51 PM PST

@@ -1,0 +1,199 @@
+Script started on Tue 24 Sep 2019 10:24:21 PM PDT
+]0;howellx@sp2:~[howellx@sp2 ~]$ history -c
+]0;howellx@sp2:~[howellx@sp2 ~]$ cd csc60
+]0;howellx@sp2:~/csc60[howellx@sp2 ~/csc60]$ mkdir lab2
+]0;howellx@sp2:~/csc60[howellx@sp2 ~/csc60]$ cd lab2
+]0;howellx@sp2:lab2[howellx@sp2 lab2]$ pwd
+/gaia/class/student/howellx/csc60/lab2
+]0;howellx@sp2:lab2[howellx@sp2 lab2]$ mkdir aaa
+]0;howellx@sp2:lab2[howellx@sp2 lab2]$ cd aaa
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ pwd
+/gaia/class/student/howellx/csc60/lab2/aaa
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ cd ..
+]0;howellx@sp2:lab2[howellx@sp2 lab2]$ pwd
+/gaia/class/student/howellx/csc60/lab2
+]0;howellx@sp2:lab2[howellx@sp2 lab2]$ ls >file1
+]0;howellx@sp2:lab2[howellx@sp2 lab2]$ cat file1
+aaa
+file1
+]0;howellx@sp2:lab2[howellx@sp2 lab2]$ less file1
+[?1049h[?1h=aaa
+file1
+[7mfile1 (END) [27m[K[K[?1l>[?1049l]0;howellx@sp2:lab2[howellx@sp2 lab2]$ file *
+aaa:   setgid directory
+file1: ASCII text
+]0;howellx@sp2:lab2[howellx@sp2 lab2]$ c [Kwc file1
+ 2  2 10 file1
+]0;howellx@sp2:lab2[howellx@sp2 lab2]$ wc *
+wc: aaa: Is a directory
+      0       0       0 aaa
+      2       2      10 file1
+      2       2      10 total
+]0;howellx@sp2:lab2[howellx@sp2 lab2]$ grep lab file1
+]0;howellx@sp2:lab2[howellx@sp2 lab2]$ cp file1 file2
+]0;howellx@sp2:lab2[howellx@sp2 lab2]$ ls
+[0m[38;5;27maaa[0m  file1  file2
+[m]0;howellx@sp2:lab2[howellx@sp2 lab2]$ cd aaa
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ cp ../file1
+cp: missing destination file operand after `../file1'
+Try `cp --help' for more information.
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ cp ../file1.
+cp: missing destination file operand after `../file1.'
+Try `cp --help' for more information.
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ cp ../file1 .
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ ls
+file1
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ mv file1 file2
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ ls
+file2
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ mv ../ile[K[K[Kfile1 .
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ cd..
+cd..: Command not found.
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ cd ..
+]0;howellx@sp2:lab2[howellx@sp2 lab2]$ ls
+[0m[38;5;27maaa[0m  file2
+[m]0;howellx@sp2:lab2[howellx@sp2 lab2]$ cd aaa
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ ls
+file1  file2
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ cmp file1 file2
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ ls > aaalist
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ cpm[K[Kmp file1 aaalsi[K[Kist
+file1 aaalist differ: byte 4, line 1
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ diff file1 aaalist
+1c1
+< aaa
+---
+> aaalist
+2a3
+> file2
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ rm file1
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ ls
+aaalist  file2
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ ps u
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+howellx  21413  0.0  0.0 116752  2012 pts/0    Ss   22:23   0:00 -csh
+howellx  21455  0.0  0.0 107132   828 pts/0    S+   22:24   0:00 script XavierHowell_lab2.txt
+howellx  21457  0.0  0.0 107644   400 pts/0    S+   22:24   0:00 script XavierHowell_lab2.txt
+howellx  21458  0.0  0.0 110376  1780 pts/1    Ss   22:24   0:00 -sh -i
+howellx  21717  0.0  0.0 114488  1280 pts/1    R+   22:35   0:00 ps u
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ ps - l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  3401 21458 21457  0  80   0 - 27594 sys_rt pts/1    00:00:00 csh
+0 R  3401 21724 21458  0  80   0 - 27036 -      pts/1    00:00:00 ps
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ !!
+ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  3401 21458 21457  0  80   0 - 27594 sys_rt pts/1    00:00:00 csh
+0 R  3401 21728 21458  0  80   0 - 27035 -      pts/1    00:00:00 ps
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ history
+     8	22:24	cd csc60
+     9	22:24	mkdir lab2
+    10	22:25	cd lab2
+    12	22:25	mkdir aaa
+    16	22:26	pwd
+    17	22:26	ls > file1
+    18	22:27	cat file1
+    19	22:27	less file1
+    20	22:27	file *
+    21	22:27	wc file1
+    22	22:28	wc *
+    23	22:28	grep lab file1
+    24	22:29	cp file1 file2
+    27	22:29	cp ../file1
+    28	22:30	cp ../file1.
+    29	22:30	cp ../file1 .
+    31	22:31	mv file1 file2
+    33	22:31	mv ../file1 .
+    34	22:32	cd..
+    35	22:32	cd ..
+    37	22:32	cd aaa
+    39	22:33	cmp file1 file2
+    40	22:33	ls > aaalist
+    41	22:34	cmp file1 aaalist
+    42	22:34	diff file1 aaalist
+    43	22:34	rm file1
+    44	22:34	ls
+    45	22:35	ps u
+    47	22:35	ps -l
+    48	22:36	history
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ cd ../ ..
+cd: Too many arguments.
+]0;howellx@sp2:aaa[howellx@sp2 aaa]$ cd ../..
+]0;howellx@sp2:~/csc60[howellx@sp2 ~/csc60]$ pwd
+/gaia/class/student/howellx/csc60
+]0;howellx@sp2:~/csc60[howellx@sp2 ~/csc60]$ cd lab1
+]0;howellx@sp2:lab1[howellx@sp2 lab1]$ headl[K lab1.c
+/*--------------*/
+/*Xavier Howell */
+/*Lab 1         */
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void)
+{
+  printf("\nLab1. \n\n");
+  printf("Hello World.\n");
+]0;howellx@sp2:lab1[howellx@sp2 lab1]$ q
+q: Command not found.
+]0;howellx@sp2:lab1[howellx@sp2 lab1]$ tail lab1.c
+int main(void)
+{
+  printf("\nLab1. \n\n");
+  printf("Hello World.\n");
+  printf("Hi, Xavier Howell.\n\n");
+  printf("Get Buckets.\n-Every NBA Player\n\n");
+
+  return EXIT_SUCCESS;
+}
+/*--------------*/
+]0;howellx@sp2:lab1[howellx@sp2 lab1]$ ls -al | e[Kless
+[?1049h[?1h=total 24
+drwx--S--- 2 howellx@ecs.csus.edu stdce 4096 Sep  5 09:55 .
+drwx--S--- 4 howellx@ecs.csus.edu stdce 4096 Sep 24 22:24 ..
+-rw------- 1 howellx@ecs.csus.edu stdce 4754 Sep  5 09:34 a.out
+-rw------- 1 howellx@ecs.csus.edu stdce  296 Sep  4 11:30 lab1.c
+-rw------- 1 howellx@ecs.csus.edu stdce  278 Sep  4 11:33 XavierHowell_lab1.txt
+[7m(END) [27m[K[K[?1l>[?1049l]0;howellx@sp2:lab1[howellx@sp2 lab1]$ history
+     8	22:24	cd csc60
+     9	22:24	mkdir lab2
+    10	22:25	cd lab2
+    12	22:25	mkdir aaa
+    17	22:26	ls > file1
+    18	22:27	cat file1
+    19	22:27	less file1
+    20	22:27	file *
+    21	22:27	wc file1
+    22	22:28	wc *
+    23	22:28	grep lab file1
+    24	22:29	cp file1 file2
+    27	22:29	cp ../file1
+    28	22:30	cp ../file1.
+    29	22:30	cp ../file1 .
+    31	22:31	mv file1 file2
+    33	22:31	mv ../file1 .
+    34	22:32	cd..
+    35	22:32	cd ..
+    37	22:32	cd aaa
+    39	22:33	cmp file1 file2
+    40	22:33	ls > aaalist
+    41	22:34	cmp file1 aaalist
+    42	22:34	diff file1 aaalist
+    43	22:34	rm file1
+    44	22:34	ls
+    45	22:35	ps u
+    47	22:35	ps -l
+    49	22:36	cd ../ ..
+    50	22:36	cd ../..
+    51	22:36	pwd
+    52	22:36	cd lab1
+    53	22:37	head lab1.c
+    54	22:37	q
+    55	22:38	tail lab1.c
+    56	22:38	ls -al | less
+    57	22:39	history
+]0;howellx@sp2:lab1[howellx@sp2 lab1]$ echo $SHELL
+/bin/csh
+]0;howellx@sp2:lab1[howellx@sp2 lab1]$ exit
+exit
+
+Script done on Tue 24 Sep 2019 10:40:05 PM PDT

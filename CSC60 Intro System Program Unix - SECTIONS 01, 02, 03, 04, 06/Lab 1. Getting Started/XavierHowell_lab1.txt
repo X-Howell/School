@@ -1,0 +1,16 @@
+Script started on Wed 04 Sep 2019 11:32:49 AM PDT
+[howellx@athena:21]> gcc lab1.c
+[howellx@athena:22]> a.out
+
+Lab1. 
+
+Hello World.
+Hi, Xavier Howell.
+
+Get Buckets.
+-Every NBA Player
+
+[howellx@athena:23]> exit
+exit
+
+Script done on Wed 04 Sep 2019 11:33:23 AM PDT

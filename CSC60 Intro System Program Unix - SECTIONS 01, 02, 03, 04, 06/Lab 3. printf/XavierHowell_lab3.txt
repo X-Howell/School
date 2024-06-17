@@ -1,0 +1,23 @@
+Script started on Sat 26 Oct 2019 09:34:35 PM PDT
+]0;howellx@athena:lab3[howellx@athena lab3]$ exitgcc lab3.c
+]0;howellx@athena:lab3[howellx@athena lab3]$ gcc lab3.c[24Gexit[Kgcc lab3.c[24G[K.a[K/a.out
+
+ Xaiver Howell. Lab 3. 
+ 
+ Jane went to the store.
+ 
+ My friend is 22 years old. 
+ 
+ "So many books, so little time" 
+ -Frank Zappa 
+ 
+ The average = 246.2 
+ 
+ The average = 246.237 
+ 
+ The average = 2.46e+02 
+ 
+]0;howellx@athena:lab3[howellx@athena lab3]$ exit
+exit
+
+Script done on Sat 26 Oct 2019 09:35:09 PM PDT

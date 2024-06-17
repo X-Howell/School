@@ -1,0 +1,15 @@
+Script started on Tue 29 Oct 2019 11:32:49 AM PDT
+]0;howellx@athena:lab4[howellx@athena lab4]$ cat lab4.out[24G[5P./a.out[24Ggcc -lm lab4.c[24G[4Pvi[34G[24G[4@gcc -l[38G
+]0;howellx@athena:lab4[howellx@athena lab4]$ gcc -lm lab4.c[24Gcat lab4.out[K[24G[5P./a.out
+]0;howellx@athena:lab4[howellx@athena lab4]$ cat lab4.out
+
+Xavier Howell.  Lab 4.
+
+            Number      Perimeter      Area Of  
+ Radius    Of Sides    Of Polygon      Polygon  
+--------   --------   ------------   ----------- 
+  15.90       5.00        93.4579      601.0915
+]0;howellx@athena:lab4[howellx@athena lab4]$ exit
+exit
+
+Script done on Tue 29 Oct 2019 11:33:18 AM PDT

@@ -1,0 +1,45 @@
+Script started on Tue 03 Dec 2019 10:01:29 PM PST
+]0;howellx@sp2:lab9[howellx@sp2 lab9]$ gcc lab9.c -Wall
+gcc: error: lab9.c-Wall: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+]0;howellx@sp2:lab9[howellx@sp2 lab9]$ gcc lab9.c -Wall
+]0;howellx@sp2:lab9[howellx@sp2 lab9]$ ./a.out
+csc60msh> 
+Argc=0 
+csc60msh>  
+Argc=0 
+csc60msh> pwd
+Argc=1 
+Argv 0 = pwd 
+/gaia/class/student/howellx/csc60/lab9
+csc60msh> cd ..
+Argc=2 
+Argv 0 = cd 
+Argv 1 = .. 
+csc60msh> pwd
+Argc=1 
+Argv 0 = pwd 
+/gaia/class/student/howellx/csc60
+csc60msh> cd lab9
+Argc=2 
+Argv 0 = cd 
+Argv 1 = lab9 
+csc60msh> pwd
+Argc=1 
+Argv 0 = pwd 
+/gaia/class/student/howellx/csc60/lab9
+csc60msh> cd
+Argc=1 
+Argv 0 = cd 
+csc60msh> pwd
+Argc=1 
+Argv 0 = pwd 
+/gaia/class/student/howellx
+csc60msh> xit   exit
+Argc=1 
+Argv 0 = exit 
+]0;howellx@sp2:lab9[howellx@sp2 lab9]$ exit
+exit
+
+Script done on Tue 03 Dec 2019 10:03:31 PM PST
